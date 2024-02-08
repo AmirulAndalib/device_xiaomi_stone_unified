@@ -120,6 +120,7 @@ PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)-kernel/kernel:kernel \
     $(call find-copy-subdir-files,*,$(DEVICE_PATH)-kernel/ramdisk-modules/,$(TARGET_COPY_OUT_VENDOR_RAMDISK)/lib/modules) \
     $(call find-copy-subdir-files,*,$(DEVICE_PATH)-kernel/vendor-modules/,$(TARGET_COPY_OUT_VENDOR)/lib/modules)
+export INLINE_KERNEL_PREBUILT= true
 
 # Media
 TARGET_USES_ION := true
